@@ -3340,7 +3340,7 @@ html {
   }
   
   .nav-menu {
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     display: flex;
   }
@@ -3555,9 +3555,9 @@ html {
     }
   
     .nav-menu {
-      background-color: #5ab963;
+      /* background-color: #5ab963; */
       padding-top: 30px;
-      padding-bottom: 30px;
+      /* padding-bottom: 30px; */
       box-shadow: 0 5px 20px rgba(0, 0, 0, .2);
     }
   
