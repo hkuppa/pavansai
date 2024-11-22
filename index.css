@@ -1205,7 +1205,7 @@ html {
     clear: both;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     tap-highlight-color: rgba(0, 0, 0, 0);
-    background: #ddd;
+    /* background: #ddd; */
     position: relative;
   }
   
@@ -1237,7 +1237,7 @@ html {
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     tap-highlight-color: rgba(0, 0, 0, 0);
     margin: auto;
-    padding-top: 10px;
+    padding-top: 0px;
     position: absolute;
     top: auto;
     bottom: 0;
@@ -2198,7 +2198,7 @@ html {
     height: 90px;
     padding-left: 2rem;
     padding-right: 2rem;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
     margin-left: 0;
     margin-right: 0;
@@ -2207,9 +2207,10 @@ html {
   
   .header {
     width: 100%;
+    background: linear-gradient(135deg, #238428, #fffadc);
     /* background-image: url("https://uploads-ssl.webflow.com/651acacd06b372214ac2f516/651acacd06b372214ac2f59c_image-header.jpg"); */
     background-position: 50%;
-    background-color: black;
+    /* background-color: black; */
     background-size: cover;
     justify-content: center;
     align-items: center;
@@ -2421,6 +2422,7 @@ html {
   .text-span {
     color: #000;
     font-weight: 800;
+    padding-bottom: 10px;
   }
   
   .text-span.cc-white-text {
@@ -2428,19 +2430,22 @@ html {
   }
   
   .feature-item-container {
-    height: 330px;
+    /* height: 330px; */
     border: 1px solid #f7f7f7;
-    padding: 50px 40px;
+    padding: 30px 30px;
     transition: box-shadow .2s;
     box-shadow: 0 5px 20px rgba(0, 0, 0, .05);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   
   .collection-list {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    margin-left: -10px;
-    margin-right: -10px;
+    /* margin-left: -10px;
+    margin-right: -10px; */
     display: flex;
   }
   
@@ -2489,8 +2494,23 @@ html {
     align-items: center;
     padding-left: 30px;
     padding-right: 30px;
+    padding-bottom: 50px;
     display: flex;
     position: relative;
+  }
+
+  /* Container for the images to center them and set the size */
+  .slider-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* Makes sure the images are vertically centered */
+  }
+
+  /* Style for the images to ensure they're 200px wide */
+  .w-slider .w-slide img {
+    width: 200px;
+    height: auto; /* Maintain aspect ratio */
   }
   
   .slider {
@@ -2501,7 +2521,7 @@ html {
   }
   
   .slide {
-    background-image: url("https://uploads-ssl.webflow.com/651acacd06b372214ac2f516/651acacd06b372214ac2f59d_image-slider-01.jpg");
+    /* background-image: url("https://uploads-ssl.webflow.com/651acacd06b372214ac2f516/651acacd06b372214ac2f59d_image-slider-01.jpg"); */
     background-position: 50%;
     background-size: cover;
   }
@@ -2758,8 +2778,8 @@ html {
   }
   
   .feature-icon {
-    width: 60px;
-    height: 60px;
+    width: 200px;
+    height: auto;
     align-items: center;
     margin-bottom: 25px;
     display: flex;
@@ -3437,6 +3457,7 @@ html {
   
     .feature-item-container {
       height: auto;
+      width: auto;
     }
   
     .collection-list {
@@ -3481,6 +3502,7 @@ html {
   
     .collection-item {
       width: 33.3333%;
+      align-items: center;
       padding-left: 5px;
       padding-right: 5px;
     }
@@ -3578,7 +3600,7 @@ html {
       /* background-color: #5ab963; */
       padding-top: 30px;
       /* padding-bottom: 30px; */
-      box-shadow: 0 5px 20px rgba(0, 0, 0, .2);
+      /* box-shadow: 0 5px 20px rgba(0, 0, 0, .2); */
     }
   
     .nav-link {
